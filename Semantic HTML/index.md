@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The New Way People Are Meeting in Cities — Corda Insights</title>
+</head>
+
+<body>
+
+    <!-- Scroll Reading Progress Bar -->
+    <div>
+        <div id="progressBar"></div>
+    </div>
+
+    <!-- Main Outer Container -->
+    <div>
+
+        <main>
+
+            <!-- Floating Top Navigation Bar -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Corda</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#download">Download</a></li>
+                    <li><a href="#more" aria-label="More options">•••••</a></li>
+                </ul>
+            </nav>
+
+            <!-- Article Header Section -->
+            <header>
+                <a href="#back" id="backBtn">
+                    <i style="transform: rotate(-135deg); font-size: 0.8rem;"></i>
+                    <span>Back to Insights</span>
+                </a>
+
+                <h1 id="articleTitle">
+                    The New Way People Are Meeting in Cities — And It's Not Dating Apps
+                </h1>
+
+                <!-- Article Metadata Row -->
+                <div>
+                    <div>
+                        <img src="./assets/images/photo_3.avif" alt="Ryan Calloway"
+                            onerror="this.src='https://placehold.co/100x100/333/fff?text=RC'">
+                        <span>Ryan Calloway</span>
+                    </div>
+
+                    <div>
+                        <span>Category</span>
+                        <span>Lifestyle</span>
+                    </div>
+
+                    <div>
+                        <span>Date</span>
+                        <span>May 20, 2026</span>
+                    </div>
+                </div>
+
+                <!-- Control Icons (Audio Player, Bookmark, Dark Mode) -->
+                <div>
+                    <button id="audioBtn" title="Listen to Article Sound Engine" aria-label="Listen">
+                        <i id="audioBtnIcon"></i>
+                    </button>
+                    <button id="bookmarkBtn" title="Save Article" aria-label="Bookmark">
+                        <i id="bookmarkIcon"></i>
+                    </button>
+                    <button id="themeBtn" title="Toggle Dark/Light Mode" aria-label="Toggle Theme">
+                        <i id="themeIcon"></i>
+                    </button>
+                </div>
+            </header>
+
+            <div>
+                <img src="./assets//images/young_people.avif" alt="Young people walking in a sunny city street"
+                    onerror="this.src='https://placehold.co/1200x600/e0e0e0/333333?text=Urban+Social+Gathering'">
+            </div>
+
+            <article id="articleContent">
+                <p id="p1">
+                    Something is shifting in how people meet in cities. Not romantically — socially. The
+                    friends-of-friends network that used to happen naturally through school, work, and neighborhood bars
+                    has quietly collapsed for a lot of people. And the apps that were supposed to fix loneliness mostly
+                    made it worse by turning every interaction into a swipe or a follow.
+                </p>
+
+                <p id="p2">
+                    What's emerging instead is something more interesting: people coordinating around shared activity
+                    rather than shared profiles. Less "here's who I am," more "here's what I'm doing — want to join?"
+                </p>
+
+                <h2 id="h1">
+                    Why activity-first connection works better
+                </h2>
+
+                <p id="p3">
+                    The problem with most social apps is that they start with identity — your photos, your bio, your
+                    follower count. This creates performance pressure before any real connection has happened. You're
+                    essentially auditioning for someone's attention before you've ever been in the same room.
+                </p>
+
+                <p id="p4">
+                    Activity-first flips this. When you meet someone on a group hike or at a neighborhood run, the
+                    shared experience does the work. You don't need a perfect profile because you're already doing
+                    something together. The conversation starts naturally, the awkwardness is lower, and the connection
+                    feels real because it happened in real life rather than through a screen.
+                </p>
+
+                <p id="p5">
+                    Research backs this up consistently. People who meet through shared activities report stronger
+                    friendships, higher trust, and more frequent contact than those who connect online first. The
+                    activity is the shortcut to actually knowing someone.
+                </p>
+            </article>
+
+        </main>
+    </div>
+
+    <!-- Sound Engine Floating Bar -->
+    <div id="audioWidget">
+        <div>
+            <div>
+                <span id="modeBadge">Voice Readout</span>
+                <span style="font-size: 0.85rem; font-weight: 600;" id="audioTitleDisplay">Text-to-Speech Engine</span>
+            </div>
+
+            <div>
+                <div>
+                    <button id="btnModeTTS">Speech</button>
+                    <button id="btnModeAmbient">Focus Ambient</button>
+                </div>
+                <button id="closeAudio" aria-label="Close audio player">
+                    <i></i>
+                </button>
+            </div>
+        </div>
+
+        <div>
+            <button id="playPauseAudio" aria-label="Play or Pause Audio">
+                <i id="playIcon"></i>
+            </button>
+
+            <div>
+                <input type="range" id="audioProgress" value="0" min="0" max="100">
+            </div>
+
+            <div id="audioTime">0:00 / 0:00</div>
+
+            <div style="display: flex; align-items: center; gap: 8px;">
+                <button id="rateBtn" title="Speech Speed">1.0x</button>
+                <i style="font-size: 0.8rem; opacity: 0.7;"></i>
+                <input type="range" id="volumeControl" value="80" min="0" max="100" style="width: 60px;">
+            </div>
+        </div>
+    </div>
+
+    <!-- Notification Toast Message -->
+    <div id="toastMsg">Action completed!</div>
+
+</body>
+
+</html>
